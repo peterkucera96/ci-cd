@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: ghcr.io/YOUR_GH_USERNAME/ci-cd-docker-k8s-demo:{{GIT_SHA}}
+          image: ghcr.io/peterkucera96/ci-cd-docker-k8s-demo:{{GIT_SHA}}
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080

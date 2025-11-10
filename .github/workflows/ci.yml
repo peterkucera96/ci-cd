@@ -6,7 +6,7 @@ on:
   pull_request:
 
 env:
-  IMAGE_NAME: ghcr.io/${{ github.repository }}/ci-cd-docker-k8s-demo
+  IMAGE_NAME: ghcr.io/${{ toLower(github.repository) }}/ci-cd-docker-k8s-demo
 
 jobs:
   test:
